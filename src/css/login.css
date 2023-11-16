@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	transition: all .2s;
+}
+.flex-inline {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+}
+.full-row {
+	display: block;
+	width: 100%;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+}
+div {
+	width: 100%;
+}
+h1 { font-size: 40px; }
+h2,
+h2 i,
+h2 span {
+	font-size: 35px;
+}
+h3 { font-size: 30px; }
+h4 { font-size: 25px; }
+a { color: #fff; }
+.form-wrapper {
+	background-image: url('../img/green-bg-1.jpg');
+	background-size: cover;
+    background-position: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 80px 0;
+}
+.form-wrapper form {
+	background: rgba(0, 0, 0, 0.5);
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 40px;
+	padding: 30px;
+	width: 500px;
+}
+#registration-form { 
+	width: 900px; 
+}
+#registration-form label {
+	width: 210px;
+}
+#registration-form a {
+	text-decoration: none;
+}
+.radio-label {
+	margin-left: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+.select-selected,
+.image-field
+{
+    background: transparent;
+    border: 0 none;
+	border-bottom: 1px solid #fff;
+    color: #fff;
+	font-size: 16px;
+    outline: 0;
+	padding: 0 15px 12px 0;
+	width: 100%;
+}
+select option {
+	display: block;
+	color: #fff;
+	background-color: #2E7F08;
+	padding: 15px 0;
+	width: 100%;
+}
+select option:hover {
+	background-color: #fff;
+}
+.items-3 input[type="text"],
+.items-3 .custom-select,
+.items-3 select {
+	width: 30%;
+} 
+.items-3 .select-selected {
+	width: 100%;
+}
+input[type="file"] {
+	outline: 0 none;
+}
+#registration-image {
+    display: block;
+    padding-left: 140px;
+}
+#registration-image-container {
+    display: block;
+	text-align: center;
+	width: 150px;
+}
+
+#registration-image img {
+	color: green;
+    font-size: 45px;
+    background: #fff !important;
+    border: 5px solid green;
+	border-radius: 50%;
+	padding: 20px;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+#registration-image input[type="file"] {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+}
+.customFileInput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.customFileInput::before {
+	content: 'Upload Picture';
+	display: inline-block;
+	color: #000 !important;
+	padding: 5px 8px;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 16px;
+	border: 1px solid #fff;
+    background: #fff !important;
+    outline: 0;
+    border-radius: 5px;
+    clear: both;
+    padding: 10px 17px;
+}
+.customFileInput:hover::before {
+	background: #2E7F08 !important;
+	color: #fff !important;
+}
+.customFileInput:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+button {
+	border: 1px solid #fff;
+	background: #fff;
+	outline: 0;
+	border-radius: 5px;
+	clear: both;
+	padding: 10px 17px;
+}
+button:hover {
+	background: #2E7F08;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+	color: #ffffff;
+	cursor: pointer;
+	user-select: none;
+}
+/*.select-selected {
+	background-color: transparent;
+	padding: 0 15px 12px 0;
+}*/
+.select-items div {
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	padding: 8px 16px;
+}
+
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background-color: #2E7F08;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	overflow-y: scroll;
+	max-height: 280px;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	font-size: inherit;
+	-webkit-text-fill-color: #fff;
+	-webkit-box-shadow: 0 0 0px 1000px #000 inset;
+	transition: background-color 5000s ease-in-out 0s;
+	-webkit-box-shadow: 0 0 0 30px transparent inset !important;
+}

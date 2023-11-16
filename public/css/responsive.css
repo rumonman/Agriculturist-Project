@@ -1,0 +1,92 @@
+/* Laptop */
+@media screen and (max-width: 1365px)  {
+	.auth #login-text-container, 
+	.auth #login-form-container {
+		height: 100vh;
+		padding: 30vh 25px;
+	}
+	.auth #login-text-container { width: 40%;  }
+	.auth #login-form-container { width: 60%;  }
+	.auth .textbox {
+		width: 100%;
+	}
+	.auth .items-3 input[type="text"] { width: 30%; }
+	.auth .items-3 .custom-select { width: 100%; 	} 
+	.auth .items-3 .select-selected {
+		width: 100%;
+	}
+	.auth.form-wrapper {
+		padding: 40px 0;
+	}
+}
+
+/* Tablet PC */
+@media screen and (max-width: 1024px)  {
+	.auth #login-text-container, 
+	.auth #login-form-container {
+		height: auto;
+		padding: 30px 15px;
+		width: 100%;
+	}
+	.auth.form-wrapper form {
+		width: 90% !important;
+	}
+	.auth .flex-inline {
+	    justify-content: flex-start;
+	    column-gap: 0;
+	    row-gap: 30px;
+	    flex-direction: column;
+	}
+	.auth .items-3 input[type="text"] { width: 100%; }
+	.auth #registration-image {
+	    padding-left: 0;
+	}
+	.auth #registration-image-container {
+		width: 100%;
+	}
+	.auth #profile-image,
+	.auth #profile-main-info {
+		text-align: center;
+	}
+	.auth #profile-main-info {
+		padding-left: 0;
+	}
+	.auth #profile-main-info p {
+		text-align: center !important;
+	}
+	.auth #profile-view label {
+		width: 100%;
+	}
+	.react-autosuggest__input {
+		display: block;
+		width: 160px !important;
+	}
+}
+
+@media screen and (max-width: 500px)  
+{
+	#brand-image span {
+		font-size: 10px !important;
+	}
+	#dashboard-header-dropdown {
+		display: none;
+	}
+	.react-autosuggest__input {
+		display: block;
+		width: 150px !important;
+	}
+	/* #profile-image,
+	#profile-main-info {
+		text-align: center;
+		width: 100%;
+	}
+	#profile-main-info {
+		padding-left: 0;
+	}
+	#profile-main-info p {
+		text-align: center !important;
+	}
+	#profile-view label {
+		width: 100%;
+	} */
+} 

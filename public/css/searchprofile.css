@@ -1,0 +1,117 @@
+.suggestion-container {
+  width: 22.5rem;
+  border: 1px solid grey;
+  border-radius: .35rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+  position: absolute;
+  top: 60px;
+  left: 158px;
+}
+.suggestion-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.suggestion-container li {
+  padding: 5px;
+}
+.suggestion-container li:hover {
+  background-color: rgba(128, 128, 128, 0.2) ;
+}
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  display: block;
+  width: 350px;
+  padding: 0.48rem 0.60rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+  background-color:#f8f9fc!important;
+  background-clip: padding-box;
+  border: 1px solid green;
+  border-radius: 0.35rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.react-autosuggest__input:focus {
+  color: #6e707e;
+  background-color: #fff;
+  border-color: #bac8f3;
+  outline: 0;
+  /* box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25); */
+}
+
+.react-autosuggest__container--open .react-autosuggest__input {
+  border-bottom-left-radius: 0 ;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__container--open .react-autosuggest__suggestions-container {
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 350px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  padding: 5px 10px;
+}
+.react-autosuggest__suggestion:hover {
+  background-color: #cfd7da;
+  cursor: pointer;
+}
+.react-autosuggest__suggestion:not(:first-child) {
+  border-top: 1px solid rgb(163, 155, 155);
+}
+
+.react-autosuggest__suggestion--focused {
+  background-color: #0C7EAF !important;
+  color: #fff;
+}
+
+.suggestion-content {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+
+.name {
+  margin-left: 30px;
+  line-height: 45px;
+}
+
+.highlight {
+  color: #ee0000;
+  font-weight: bold;
+}
+
+.react-autosuggest__suggestion--focused .highlight {
+  color: #120000;
+}

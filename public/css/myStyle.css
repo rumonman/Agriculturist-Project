@@ -1,0 +1,132 @@
+#logo-image img{
+    height: 70px;
+    width: 70px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+#logo-image span {
+	font-size: 35px;
+}
+.friendImageProfile {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+}
+.friendCard {
+    width: 60%;
+    display: inline-block;
+}
+.friendCard h4 {
+    padding: 5px;
+    margin-bottom: 10px;
+    color: black;
+}
+.friendCard .btn-primary { 
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.friendCard .btn-secondary {
+    background-color: rgb(187, 181, 181) !important;
+    /* margin-left: 20px; */
+    width: 120px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.friendCard .btn-secondary:hover {
+    background-color: white !important;
+}
+.update-file-btn .btn-danger {
+    color: #fff;
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+    margin-left: 10px;
+}
+.file-post {
+    color: black;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(239, 247, 244) !important;
+}
+.file-post-icon {
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+}
+.file-post-header {
+    margin-bottom: 0% !important;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+}
+.file-post-title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    max-width: 95%;
+    height: 35px;
+    
+    margin-bottom: 0%;
+}
+.image-file-post {
+    padding: 10px;
+    padding-left: 70px;
+    width: 90%;
+    text-align: center;
+    height: 400px;
+}
+/* .file-post-desc {
+    margin-bottom: 5px !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    max-width: 95%;
+    height: 20px;
+    overflow: hidden;
+} */
+@media screen and (max-width: 1024px)  {
+    .friendCard {
+        width: 100%;
+    }
+    .friendCard h3 {
+        margin: 10px;
+    }
+    .friendCard .btn-primary, .friendCard .btn-secondary {
+        font-size: 12px;
+        margin: 10px;
+    }
+    /* .friendCard .btn-secondary {
+        margin: 10px; 
+        font-size: 12px;
+    } */
+}
+@media screen and (max-width: 768px)  {
+    .auth h2 span {
+        font-size: 15px;
+    }
+    #brand-image img { 
+        border-radius: 7px;
+        clear: both;
+        width: 90px;
+        height: 120px;
+    }
+    #brand-image span {
+        font-size: 14px;
+        margin-top: 6px;
+        
+    }
+    .image-file-post {
+        padding: 10px 10px;
+        width: 90%;
+        height: 150px;
+    }
+}
+.policy {
+    padding: 10px;
+}

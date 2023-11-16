@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 1365px)  {
+	#login-text-container, 
+	#login-form-container {
+		height: 100vh;
+		padding: 30vh 25px;
+	}
+	#login-text-container { width: 40%;  }
+	#login-form-container { width: 60%;  }
+	.textbox {
+		width: 100%;
+	}
+	.items-3 input[type="text"] { width: 30%; }
+	.items-3 .custom-select { width: 100%; 	} 
+	.items-3 .select-selected {
+		width: 100%;
+	}
+	.form-wrapper {
+		padding: 40px 0;
+	}
+}
+
+
+@media screen and (max-width: 999px)  {
+	#login-text-container, 
+	#login-form-container {
+		height: auto;
+		padding: 30px 15px;
+		width: 100%;
+	}
+	.form-wrapper form {
+		width: 90% !important;
+	}
+	.flex-inline {
+	    justify-content: flex-start;
+	    column-gap: 0;
+	    row-gap: 30px;
+	    flex-direction: column;
+	}
+	.items-3 input[type="text"] { width: 100%; }
+}

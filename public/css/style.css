@@ -1,0 +1,352 @@
+body {
+	color: #555 !important;
+}
+/* Tags */
+a {
+	color: #34A853;
+	text-decoration: none !important;
+}
+a:hover {
+	color: #34A853;
+}
+p {
+	text-align: justify !important;
+}
+.post-image img {
+	max-height: 100% !important; 
+	max-width: 100% !important; 
+}
+
+/* Page Designs */
+.text-primary {
+    color: #34A853 !important;
+}
+
+.btn {
+	border: 1px solid #fff;
+    background-color: #34A853;
+    color: #fff;
+}
+.btn:hover {
+	border: 1px solid #34A853;
+    background-color: #fff;
+    color: #34A853;
+}
+
+.topbar .dropdown-list .dropdown-header {
+    background-color: #34A853;
+    border: 1px solid #34A853;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #fff;
+}
+
+.sidebar-dark .nav-item .nav-link {
+    color: #fff;
+}
+.bgGradientPrimary {
+    background-color: #34A853 !important;
+    background-image: none;
+    background-size: cover;
+}
+/* --- Sidebar Brand Logo --- */
+#brand-image {
+	text-align: center;
+}
+.sidebar #brand-image {
+	padding: 20px;
+}
+#brand-image img { 
+	border-radius: 10px;
+	clear: both;
+	width: 110px;
+	height: 140px;
+}
+#brand-image span {
+	color: #fff;
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+.sidebar.toggled #brand-image span {
+	font-size: 10px;
+}
+
+#posts-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+.post-card {
+	box-shadow: 0px 2px 3px 0px #bbb;
+}
+.post-card small {
+	margin-right: 15px !important;
+}
+
+.post-info small {
+	margin-right: 30px;
+}
+.post-card small i,
+.post-info small i {
+	margin-right: 5px;
+}
+#pagination {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 20px;
+}
+#pagination a {
+	border: 1px solid #34A853;
+	background: #34A853;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 13px;
+}
+#pagination a.active,
+#pagination a:hover {
+	background: #fff;
+	color: #34A853;
+	text-decoration: none;
+}
+#pagination a.inactive {
+	background: #bbb;
+	border: 1px solid #bbb;
+}
+
+
+#advertisements {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.advertisement {
+	background-color:#fff !important;
+	height: 350px !important;
+	display: inline-block;
+	width: 200px;
+}
+.small-advert {
+	background-color:#fff !important;
+	height: 250px !important;
+	display: inline-block;
+	width: 200px;
+}
+.video-advert {
+	background-color:#fff !important;
+	height: 250px !important;
+	display: inline-block;
+	max-width: 100%;
+}
+.text-right {
+	text-align: right !important;
+	margin-left: 15px !important;
+}
+/* .video-advert i {
+	background-color: white !important; 
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
+} */
+/* --- Details Page --- */
+#post-details {
+	margin-top: 30px;
+}
+.comment-form textarea {
+	display: block;
+	border-radius: 8px;
+	margin-top: 20px;
+	padding: 10px 13px;
+	outline: 0;
+	width: 100%;
+}
+#comments {
+	display: flex;
+	margin-top: 30px;
+	margin-left: -80px;
+	padding: 0;
+	flex-direction: column;
+	/* width: 100%; */
+}
+.comment {
+	float: left;
+	padding-left: 80px;
+	width: 100%;
+}
+.comment img {
+    float: left;
+    border-radius: 50%;
+	margin-top: 10px;
+    width: 18%;
+    max-width: 60px;
+	height: 60px;
+}
+
+.comment-edit textarea {
+	display: block;
+	border-radius: 8px;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	position: relative;
+	outline: 0;
+    width: 90%;
+}
+
+.comment span {
+    float: right;
+    background-color: #f0f2f5 !important;
+    border-radius: 8px;
+    color: #050505 !important;
+    padding: 15px 20px;
+    position: relative;
+    margin-left: auto;
+    margin-top: 10px;
+	margin-bottom: 20px;
+    width: 81%;
+}
+.comment span::before {
+	background: #ebeef7 !important;
+	content: "";
+	display: block;
+	position: absolute;
+	left: -5px;
+	top: 20px;
+	height: 10px;
+	width: 10px;
+	transform: rotate(45deg);
+}
+.comment .comment span,
+.comment .comment span::before {
+    background-color: #1CA261;
+}
+.edit-delete small {
+	font-size: medium;
+	margin: 10px;
+}
+.edit-delete small Link {
+	margin-left: 5px;
+}
+/* Profile Page */
+.common-card {
+	background: #fff;
+	border-radius: .35rem;
+	padding: 1.25rem;
+	box-shadow: 0px 1px 3px 0px #bbb;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.common-card .pen {
+	position: absolute;
+	right: 20px;
+    top: 20px;
+}
+.picture-pen {
+	color: #fff;
+	font-size: 19px;
+}
+#profile-main-info {
+	float: right;
+	padding-left: 30px;
+	width: 65%;
+}
+#profile-main-info h2 {
+	padding-top: 35px;
+}
+#profile-view h2,
+#profile-view h5 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#profile-view label {
+	font-weight: bold;
+	width: 200px;
+}
+#profile-view legend {
+	font-size: 16px;
+	font-weight: bold;
+}
+#profile-image-card {
+	background: url('../img/green-bg-1.jpg');
+}
+#profile-image {
+	display: block;
+	position: relative;
+	height: 355px;
+	margin: 0 auto;
+	width: 260px;
+}
+#profile-image img {
+	border-radius: 7px;
+	height: 100%;
+	width: 100%;
+} 
+#profile-image-container {
+	background: #34A853;
+	border: 3px solid #34A853;
+	border-radius: 10px;
+    position: relative;
+    height: 260px;
+    width: 260px;
+    max-width: 100%;
+    background: #fff;
+    
+}
+#profile-image-container h6 {
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	padding: 0 10px;
+	text-align: center;
+	width: 100%;
+	
+}
+.profile-add-link,
+.profile-message-link {
+	position: absolute;
+	border: 1px solid #34A853;
+	color: #fff;
+	padding: 18px 15px 12px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 10px;
+}
+.profile-add-link {
+    background: linear-gradient(to bottom, #34A853, rgb(70, 126, 70));
+    top: 251px;
+   
+    left: 20px;
+    width: 220px;
+}
+.profile-message-link {
+    background: #34A853;
+    top: 298px;
+    z-index: 1;
+    left: 35px;
+    width: 190px;
+}
+.profile-add-link:hover, 
+.profile-message-link:hover {
+	background: rgb(243, 247, 246);
+	color: rgb(5, 248, 5);
+	font-size: 20px;
+}
+#modal-profile-picture img {
+	max-width: 180px !important;
+}
+.user-img-profile {
+	height: 2rem;
+  	width: 2rem;
+}
+.not-user {
+	position: absolute;
+	right: 80px;
+	
+}

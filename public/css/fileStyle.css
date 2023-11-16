@@ -1,0 +1,161 @@
+.file {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+ .file h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .file h1,
+  .main-content {
+    margin-bottom: 20px;
+  }
+  
+  .file .active {
+    font-weight: 600;
+    color: #0e7bf1;
+  }
+  
+  .file .errorMsg {
+    color: #f21e08;
+    background: #fff0f0;
+    padding: 1rem;
+  }
+  
+  
+  .file .header {
+    margin-bottom: 20px;
+  }
+  .header nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header nav a {
+    margin: 10px;
+  }
+  .upload-section {
+    display: flex;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-section > div {
+      width: 50%;
+}
+
+  
+  .drop-zone {
+    margin-bottom: 10px;
+    padding: 40px 10px;
+    height: inherit;
+    border: 2px dashed #e9ebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .drop-zone:focus {
+      outline: none;
+    }
+  
+  .image-preview {
+    height: inherit;
+    margin-left: 5%;
+  }
+  
+  .preview-image {
+    width: 100%;
+    height: inherit;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .preview-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+  }
+  
+  .files-container {
+    width: 98%;
+    overflow-x: auto;
+  }
+  .files-container .view-file {
+    max-width: 80% !important;
+    height: 60% !important;
+  }
+  
+  .files-table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+  }
+ .files-table tr, td, th {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .files-table .file-type {
+      width: 5%;
+      color: #34A853;
+      font-size: 22px;
+      text-align: center;
+    }
+    .files-table .file-title {
+      width: 20%;
+    }
+  
+    .files-table .file-description {
+      width: 60%;
+    }
+    /* .files-table .file-actions {
+      text-align: center;
+    } */
+    .files-table .file-actions .action{
+        padding-right: 3px;
+        font-size: 17px;
+        color:#34A853;
+    }
+    
+    .files-table .file-actions .profile-action{
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 20px;
+      color:#34A853;
+    }
+    .read-or-hide{
+      color: rgb(6, 241, 112);
+      cursor: pointer;
+      font-size: 15px;
+      display: block;
+    }
+  
+  @media screen and (max-width: 1000px) {
+    .upload-section {
+      flex-direction: column;
+    }
+    .upload-section > div {
+        width: 100%;
+    }
+    .image-preview {
+      margin-left: 0;
+      height: 300px;
+    }
+    .upload-section {
+      height: unset;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .file h1 {
+      font-size: 25px;
+    }
+    .drop-zone {
+      width: 100%;
+    }
+  }
